@@ -1,0 +1,6 @@
+url: https://github.com/AliSoftware/SwiftGen
+install:
+- rake build
+- rm -f $ROCKSET_PATH/bin/$ROCKET_SPEC_NAME
+- cp build/Release/swiftgen $ROCKSET_PATH/bin
+clean: rm -rf build

@@ -1,0 +1,8 @@
+url: https://github.com/user/repo # required
+# branch: tag or branch that won't be recognized by default
+# install:
+# - swift build -c release
+# - rm -f $ROCKSET_PATH/bin/$ROCKET_SPEC_NAME
+# - cp .build/release/$ROCKET_SPEC_NAME $ROCKSET_PATH/bin
+# uninstall: rm -f $ROCKSET_PATH/bin/$ROCKET_SPEC_NAME
+# clean: rm -rf .build

@@ -1,0 +1,3 @@
+url: https://github.com/JohnSundell/SwiftPlate
+install: PREFIX=$ROCKSET_PATH make install
+uninstall: PREFIX=$ROCKSET_PATH make uninstall
