@@ -1,0 +1,6 @@
+url: https://github.com/RLovelett/langserver-swift
+install:
+- echo langserver-swift requires at least swift-DEVELOPMENT-SNAPSHOT-2016-12-01-a
+- swift build -c release -Xswiftc -target -Xswiftc x86_64-apple-macosx10.11
+- rm -f $ROCKSET_PATH/bin/$ROCKET_SPEC_NAME
+- cp .build/release/LanguageServer $ROCKSET_PATH/bin
