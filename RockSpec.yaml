@@ -1,9 +1,0 @@
---- 
-needless:
-- url: "https://github.com/dduan/needless"
-rock:
-- url: "https://github.com/vknabel/rock"
-sourcekitten:
-- url: "https://github.com/jpsim/SourceKitten"
-swiftplate:
-- url: "https://github.com/realm/SwiftLint"
