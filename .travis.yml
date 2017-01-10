@@ -4,11 +4,13 @@ os: osx
 osx_image: xcode8
 install:
 #  - bundle install
-  - cd TestProject && eval "$(curl -sL https://gist.githubusercontent.com/kylef/5c0475ff02b7c7671d2a/raw/9f442512a46d7a2af7b850d65a7e9bd31edfb09b/swiftenv-install.sh)" && cd ..
+  - cd $TRAVIS_BUILD_DIR/TestProject && eval "$(curl -sL https://gist.githubusercontent.com/kylef/5c0475ff02b7c7671d2a/raw/9f442512a46d7a2af7b850d65a7e9bd31edfb09b/swiftenv-install.sh)" && cd $TRAVIS_BUILD_DIR
   - eval "$(curl -sL https://gist.githubusercontent.com/vknabel/4a280f2e4e342a26721a1333b2b0dcad/raw/783509f54572945ffa5b9662585789c1300e7bf4/rock-install.sh)"
 script:
   - set -o pipefail
-  - ./TestProject/test.sh
+  - cd $TRAVIS_BUILD_DIR/TestProject
+  - ./test.sh
+  - cd $TRAVIS_BUILD_DIR
 #  - bundle exec danger
 cache:
 #  - bundler
