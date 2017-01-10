@@ -1,0 +1,6 @@
+url: https://github.com/apple/swift-protobuf
+build: swift build # Fixes compilation issues
+link: cp .build/debug/$ROCKET_SPEC_NAME $ROCK_PATH/bin
+external:
+  - name: protobuf
+    provider: brew install protobuf
