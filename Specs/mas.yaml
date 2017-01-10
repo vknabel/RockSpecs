@@ -1,0 +1,6 @@
+url: https://github.com/mas-cli/mas
+build: ./script/build
+link: cp build/mas $ROCK_PATH/bin
+external:
+  - name: xcpretty
+    provider: gem install xcpretty -v 0.2.2
