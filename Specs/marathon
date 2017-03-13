@@ -1,0 +1,4 @@
+name: marathon
+url: https://github.com/JohnSundell/Marathon
+build: swift build -c release -Xswiftc -static-stdlib
+link: cp -f .build/release/Marathon $ROCK_PATH/bin/marathon
