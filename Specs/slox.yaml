@@ -1,0 +1,3 @@
+swift-version: ^3.0
+url: https://github.com/alexito4/slox
+build: swift build -c release -Xswiftc -target -Xswiftc x86_64-macosx10.12
