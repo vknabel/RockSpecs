@@ -1,0 +1,3 @@
+swift-version: ^3.0
+url: https://github.com/onevcat/FengNiao
+link: cp .build/release/FengNiao $ROCK_PATH/bin/fengniao
