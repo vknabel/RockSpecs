@@ -1,0 +1,4 @@
+swift-version: ^3.0
+url: https://github.com/VFUC/avea-cli
+build: bash ./build.sh
+link: cp avea $ROCK_PATH/bin/avea
