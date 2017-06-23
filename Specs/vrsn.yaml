@@ -1,0 +1,4 @@
+swift-version: ^3.0
+url: https://github.com/TwoRingSoft/Vrsnr
+build: xcodebuild -project Vrsnr/Vrsnr.xcodeproj -scheme vrsn -configuration Release -derivedDataPath .build clean build
+link: cp .build/Build/Products/Release/vrsn $ROCK_PATH/bin/vrsn
