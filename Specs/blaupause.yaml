@@ -1,0 +1,3 @@
+swift-version: ^3.0
+url: https://github.com/mRs-/Blaupause
+link: cp .build/release/Blaupause $ROCK_PATH/bin/blaupause
