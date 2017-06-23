@@ -1,0 +1,9 @@
+swift-version: ^3.0
+url: https://github.com/JohnSundell/Playground
+build:
+  # Fix issues with
+  - sed -i -e 's/playground.swift/Playground.swift/g' Package.swift
+  - sed -i -e 's/#!/\/\//g' Sources/Playground.swift
+  # Actually build
+  - swift build -c release
+link: cp .build/release/Playground $ROCK_PATH/bin/playground
