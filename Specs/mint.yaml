@@ -1,0 +1,4 @@
+swift-version: ^4.0
+url: https://github.com/yonaskolb/Mint
+link: cp .build/release/Mint $ROCK_PATH/bin/mint
+build: swift build --disable-sandbox -c release -Xswiftc -static-stdlib
